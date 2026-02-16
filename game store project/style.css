@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    font-family: "Merriweather", serif;
+    line-height: 1.6;
+    background-color: #000000; /* Latar belakang hitam */
+    color: #FFFFFF; /* Teks putih */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Shadow halus untuk teks agar lebih tajam */
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', Arial, sans-serif; /* Font bold untuk brand */
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.3); /* Shadow merah halus untuk aksen */
+}
+
+.nav-link.off:hover {
+    text-decoration: underline 2px;
+    color: #FF0000 !important; /* Hover merah untuk link */
+}
+.navbar-logo {
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    
+}
+
+.logo-img {
+  height: 50px; /* Sesuaikan dengan kebutuhan */
+  margin-right: 15px; /* Sesuaikan jarak */
+}
+
+/* Header Section */
+header {
+    background-image: url(image/banners.png); /* Hapus gambar untuk tema merah */
+    background-size: cover;
+    background-position: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', Arial, sans-serif; /* Font bold untuk header */
+    padding: 5rem 0; /* Padding lebih besar untuk efek dramatis */
+    box-shadow: inset 0 0 50px rgba(255, 0, 0, 0.2); /* Shadow dalam untuk kedalaman */
+}
+
+/* Card Customization */
+.card {
+    border: none;
+    background-color: #000000; /* Latar belakang card hitam */
+    border-radius: 15px; /* Sudut lebih bulat untuk desain modern */
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.1); /* Shadow merah halus untuk efek 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi smooth pada hover */
+    text-align: center;
+    align-items: center;
+
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek lift pada hover */
+    box-shadow: 0 12px 24px rgba(255, 0, 0, 0.2); /* Shadow lebih kuat saat hover */
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Sudut atas bulat */
+}
+
+.card-body {
+    padding: 1.5rem; /* Padding lebih besar untuk ruang */
+}
+
+.card-title {
+    font-family: 'Montserrat', Arial, sans-serif; /* Font bold untuk judul */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-family: 'Roboto', Arial, sans-serif; /* Font smooth untuk deskripsi */
+    font-weight: 400;
+    color: #FFFFFF; /* Pastikan putih */
+}
+
+.btn-card {
+    background-color: #FF0000; /* Tombol merah */
+    color: #FFFFFF; /* Teks putih */
+    border-radius: 25px; /* Sudut bulat untuk tombol modern */
+    padding: 10px 20px; /* Padding lebih besar */
+    font-family: 'Montserrat', Arial, sans-serif; /* Font bold untuk tombol */
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi smooth */
+}
+
+.btn-card:hover {
+    background-color: #CC0000; /* Merah gelap saat hover */
+    transform: scale(1.05); /* Efek zoom kecil */
+}
+
+.nav-item-btn:hover {
+    background-color: #b3b3b3;
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Hitam */
+    color: #FFFFFF; /* Putih */
+    font-family: 'Roboto', Arial, sans-serif; /* Font smooth untuk footer */
+    padding: 2rem 0; /* Padding lebih besar */
+    box-shadow: 0 -4px 8px rgba(255, 0, 0, 0.1); /* Shadow atas untuk kedalaman */
+}

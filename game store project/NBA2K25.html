@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamak Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="buynow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mamak Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link off" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link off" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+            <!-- Card -->
+            <div class="content">
+                <div class="col-md-12" data-aos="zoom-in" data-aos-duration="200">
+                    <div class="card shadow-sm">
+                        <!-- Gambar di tengah card dan lebih besar -->
+                        <img src="image/NBA-2K25.jpg" class="card-img-left" alt="Game 1">
+                        <!-- Deskripsi dan harga di bawah gambar -->
+                        <div class="card-body">
+                            <h5 class="card-title">NBA 2K25</h5>
+                            <p class="card-text">A basketball simulation game featuring realistic gameplay, updated rosters, advanced graphics.</p>
+        
+                            <!-- Menambahkan harga -->
+                            <p class="price"><strong>Price: Rp 799 000</strong></p>
+        
+                            <!-- Tombol konfirmasi pembelian -->
+                            <button class="btn btn-primary" id="buyButton">Confirm Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal Konfirmasi Pembelian -->
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal" id="confirmationModal">
+                <div class="modal-header">Confirm Your Purchase</div>
+                <div class="modal-body">
+                    Do you want to purchase NBA 2K25 for Rp 799 000?
+                </div>
+                <div class="modal-footer">
+                    <button id="yesButton" class="btn btn-success">Yes</button>
+                    <button id="noButton" class="btn btn-danger">No</button>
+                </div>
+            </div>
+            
+</section>
+
+<!-- Footer -->
+ <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p>&copy; 2025 Mamak Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("buyButton").addEventListener("click", function() {
+        // Menampilkan dialog konfirmasi
+        const confirmPurchase = confirm("Do you want to purchase NBA 2K25 for Rp 799 000?");
+        
+        if (confirmPurchase) {
+            alert("Thank you for your purchase!");
+        } else {
+            alert("Purchase canceled.");
+        }
+    });
+</script>
+
+</body>
+</html>

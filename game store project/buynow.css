@@ -1,0 +1,57 @@
+/* Styling untuk card pembelian */
+body {
+    background-color: black;
+}
+.card {
+    display: flex;
+    flex-direction: column; /* Membuat card dalam format vertikal */
+    align-items: center;  /* Menempatkan konten card di tengah */
+    justify-content: center;
+    margin: 20px 20px;
+    background-color: #232222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px; /* Padding agar konten tidak menempel ke sisi card */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-img-left {
+    width: 100%;  /* Membuat gambar memenuhi lebar card */
+    max-width: 500px;  /* Membatasi gambar agar tidak terlalu besar */
+    height: auto;  /* Menjaga proporsi gambar */
+    margin-bottom: 20px;  /* Memberikan jarak antara gambar dan konten di bawahnya */
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling umum untuk card */
+.card-body {
+    padding: 30px;
+    text-align: center;  /* Menjaga teks agar terpusat */
+    color: white;
+}
+
+.card-title {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+    color: limegreen;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
